@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chef Retard - Recettes Rapides</title>
-    <style>
+   <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 20px;
-            background-color: #f8f8f8;
-            color: #333;
+            background-color: #f7f7f7;
+            color: #444;
         }
 
         h1 {
@@ -17,19 +17,34 @@
             color: #e44d26;
         }
 
+        .dish-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
         .dish {
+            width: 300px;
+            margin: 20px;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             overflow: hidden;
-            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .dish:hover {
+            transform: scale(1.05);
         }
 
         .dish img {
             max-width: 100%;
             height: auto;
-            border-bottom: 1px solid #eee;
             border-radius: 8px 8px 0 0;
+        }
+
+        .dish-content {
+            padding: 20px;
         }
 
         .dish h2 {
@@ -40,12 +55,12 @@
 
         .dish p {
             color: #666;
-            padding: 10px;
         }
     </style>
 </head>
 <body>
 
+    <h1>Chef Retard - Recettes Rapides</h1>
     <div class="dish">
         <img src="pizza.jpeg" alt="Pâtes à la Carbonara">
         <h2>Pâtes à la Carbonara Express</h2>
