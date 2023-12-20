@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chef Retard - Recettes Rapides</title>
-   <style>
+    <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 20px;
@@ -24,7 +24,8 @@
         }
 
         .dish {
-            width: 300px;
+            display: flex;
+            width: 600px; /* Ajustez la largeur selon vos besoins */
             margin: 20px;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -38,12 +39,13 @@
         }
 
         .dish img {
-            max-width: 100%;
+            max-width: 40%; /* Ajustez la largeur de l'image selon vos besoins */
             height: auto;
             border-radius: 8px 0 0 8px;
         }
 
         .dish-content {
+            flex: 1;
             padding: 20px;
         }
 
@@ -61,7 +63,10 @@
 <body>
 
     <h1>Chef Retard - Recettes Rapides</h1>
-   <div class="dish">
+
+    <div class="dish-container">
+
+        <div class="dish">
             <img src="pizza.jpeg" alt="Pâtes à la Carbonara">
             <div class="dish-content">
                 <h2>Pâtes à la Carbonara Express</h2>
@@ -70,64 +75,86 @@
             </div>
         </div>
 
-    <!-- Répétez la structure ci-dessus pour chaque plat -->
-    <!-- N'oubliez pas de mettre le bon lien d'image pour chaque plat -->
+        <!-- Répétez la structure ci-dessus pour chaque plat -->
+        <!-- N'oubliez pas de mettre le bon lien d'image pour chaque plat -->
 
-    <div class="dish">
-        <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
-        <h2>Salade de Poulet César Minute</h2>
-        <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
-        <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
-    </div>
- <div class="dish">
-        <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
-        <h2>Salade de Poulet César Minute</h2>
-        <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
-        <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
-    </div>
-    <div class="dish">
-        <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
-        <h2>Salade de Poulet César Minute</h2>
-        <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
-        <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
-    </div>
-    <div class="dish">
-        <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
-        <h2>Salade de Poulet César Minute</h2>
-        <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
-        <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
-    </div>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
-    </div>
-    <div class="dish">
-        <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
-        <h2>Salade de Poulet César Minute</h2>
-        <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
-        <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
-    </div>
-    <div class="dish">
-        <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
-        <h2>Salade de Poulet César Minute</h2>
-        <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
-        <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
-    </div>
-    <div class="dish">
-        <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
-        <h2>Salade de Poulet César Minute</h2>
-        <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
-        <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
-    </div>
-    <div class="dish">
-        <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
-        <h2>Salade de Poulet César Minute</h2>
-        <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
-        <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
-    </div>
-    <div class="dish">
-        <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
-        <h2>Salade de Poulet César Minute</h2>
-        <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
-        <p>
+        <div class="dish">
+            <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
+            <div class="dish-content">
+                <h2>Salade de Poulet César Minute</h2>
+                <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
+                <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
             </div>
+        </div
+            <div class="dish">
+            <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
+            <div class="dish-content">
+                <h2>Salade de Poulet César Minute</h2>
+                <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
+                <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
+            <div class="dish-content">
+                <h2>Salade de Poulet César Minute</h2>
+                <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
+                <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
+            <div class="dish-content">
+                <h2>Salade de Poulet César Minute</h2>
+                <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
+                <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
+            <div class="dish-content">
+                <h2>Salade de Poulet César Minute</h2>
+                <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
+                <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
+            <div class="dish-content">
+                <h2>Salade de Poulet César Minute</h2>
+                <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
+                <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
+            <div class="dish-content">
+                <h2>Salade de Poulet César Minute</h2>
+                <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
+                <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
+            <div class="dish-content">
+                <h2>Salade de Poulet César Minute</h2>
+                <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
+                <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="pizza.jpeg" alt="Salade de Poulet César Minute">
+            <div class="dish-content">
+                <h2>Salade de Poulet César Minute</h2>
+                <p>Ingrédients : Poulet cuit, laitue, croûtons, parmesan, sauce César.</p>
+                <p>Description : Une version rapide de la célèbre salade César, avec des morceaux de poulet grillé...</p>
+            </div>
+        </div>
+        
+
+        <!-- Continuez ainsi pour les autres plats -->
+
+    </div>
 
 </body>
 </html>
