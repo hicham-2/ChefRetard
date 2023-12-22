@@ -15,9 +15,9 @@
             background-color: #f7f7f7;
             color: #444;
             display: flex;
-            flex-direction: center;
-            align-items: center; 
-            justify-content: center; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             min-height: 100vh;
         }
 
@@ -29,14 +29,13 @@
         .dish-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
-            
+            justify-content: center;
+            gap: 20px;
         }
 
         .dish {
-            display: flex;
-            width: 600px; /* Ajustez la largeur selon vos besoins */
-            margin: 20px;
+            flex: 0 0 calc(100% - 20px); /* Pleine largeur pour les écrans mobiles, avec un espace entre eux */
+            margin: 10px;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
@@ -49,13 +48,12 @@
         }
 
         .dish img {
-            max-width: 40%; /* Ajustez la largeur de l'image selon vos besoins */
+            width: 100%;
             height: auto;
-            border-radius: 8px 0 0 8px;
+            border-radius: 8px 8px 0 0;
         }
 
         .dish-content {
-            flex: 1;
             padding: 20px;
         }
 
@@ -67,6 +65,13 @@
 
         .dish p {
             color: #666;
+        }
+
+        @media (min-width: 768px) {
+            /* Appliquer des styles spécifiques pour les écrans plus larges (tablette, desktop, etc.) */
+            .dish {
+                flex: 0 0 calc(33.3333% - 20px);
+            }
         }
     </style>
 </head>
@@ -141,8 +146,7 @@
         </div>
         
 
-        <!-- Continuez ainsi pour les autres plats -->
-
+        
     </div>
 
 </body>
